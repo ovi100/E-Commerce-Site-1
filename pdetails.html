@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>BG Store</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Owl Carousel Core CSS -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.min.css">
+	<!-- Vegas Slider Core CSS -->
+	<link rel="stylesheet" href="css/vegas.min.css">
+	<!-- Font Awesome Core CSS -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Developer Custom CSS -->
+	<link rel="stylesheet" href="css/bgstore.css">
+	<link rel="stylesheet" href="css/mediaqueries.css">
+</head>
+<body>
+
+	<!-- Start Project Code  -->
+
+	<div id="menu-sidenav" class="menu-sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closemenuSidenav()">&times;</a>
+		<div class="sidenav-menu-link">
+			<ul>
+				<li><a href="">home</a></li>
+				<li><a href="">shirt</a></li>
+				<li>
+					<a data-toggle="collapse" href="#second-category">
+						t-shirt <span class="fa fa-plus"></span>
+					</a>
+					<div id="second-category" class="collapse">
+						<ul>
+							<li>
+								<a data-toggle="collapse" href="#third-category">
+									NEW T-SHIRT <span class="fa fa-plus"></span>
+								</a>
+								<div id="third-category" class="collapse">
+									<ul>
+										<li><a href="#">Normal Shirt</a></li>
+										<li><a href="#">Formal Shirt</a></li>
+										<li><a href="#">Punjabi</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#">GONJI STAMP</a></li>
+							<li><a href="#">IDENTITY CRISIS</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="">accessories</a></li>
+				<li><a href="">cart</a></li>
+				<li><a href="">checkout</a></li>
+			</ul>
+		</div>
+		<hr>
+		<div class="sidenav-menu-account">
+			<ul>
+				<li><a href="#">Terms and Condition</a></li>
+				<li><a href="#"><span class="fa fa-user"></span> Reister</a></li>
+		        <li><a href="#"><span class="fa fa-sign-in"></span> Login</a></li>
+			</ul>
+		</div>
+		<hr>
+		<div class="sidenav-menu-social">
+			<ul>
+				<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+		        <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+		        <li><a href="#"><span class="fa fa-youtube-play"></span></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="main-wrapper">
+		<!-- Start Top Toolbar Section -->
+		<section id="top-Navbar">
+			<nav class="top-navbar">
+			  <div class="container">
+			    <div class="navbar-header">
+			    	<a class="navbar-brand">Shipping cost is applicable for less than 7 items purchase .</a>
+			    </div>
+			    <ul class="nav navbar-nav navbar-right">
+			      <li><a href="#"><span class="fa fa-user"></span> Reister</a></li>
+			      <li><a href="#"><span class="fa fa-sign-in"></span> Login</a></li>
+			      <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+			      <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+			      <li><a href="#"><span class="fa fa-youtube-play"></span></a></li>
+			    </ul>
+			  </div>
+			</nav>
+		</section>
+		<!-- End To Toolbar Section -->
+
+		<!-- Start Main Navbar Section -->
+		<section id="main-navbar">
+			<nav>
+			  	<div class="container" id="nav-item">
+				    <div class="navbar-header">
+					    <a class="navbar-brand" href="#">
+					      	<img src="images/logo.png" alt="logo">
+					    </a>
+				    </div>
+				    <div class="menu-link" id="mainNavbar">
+					    <ul class="nav navbar-nav">
+					      <li><a href="index.html">home</a></li>
+					      <li><a href="catalog.html">shop</a></li>
+					      <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								t-shirt&nbsp;&nbsp;<i class="fa fa-angle-down"></i>
+							</a>
+							<ul class="dropdown-menu second-dropdown-menu">
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+										NEW T-SHIRT&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+									</a>
+									<ul class="dropdown-menu third-dropdown-menu">
+										<li><a href="">Formal Shirts</a></li>
+										<li><a href="">Panjabi</a></li>
+										<li><a href="">Underwear</a></li>
+									</ul>
+								</li>
+								<li><a href="#">GONJI STAMP</a></li>
+								<li><a href="#">IDENTITY CRISIS</a></li>
+							</ul>
+						</li>
+					      <li><a href="pdetails.html">accessories</a></li>
+					    </ul>
+					</div>
+					<div class="menu-toggle-btn">
+						<ul class="nav navbar-nav">
+					    	<li>
+					    		<a href="#" onclick="openmenuSidenav()">Menu&nbsp;&nbsp;
+					    			<i class="fa fa-bars"></i>
+					    		</a>
+					    	</li>
+					    </ul>
+					</div>
+				    <ul class="nav navbar-nav navbar-right nav-icon">
+					    <li>
+					      	<a onclick="openNav()">
+					      		<i class="fa fa-shopping-bag"></i>
+					      		<span class="shopping-label">0</span>
+					      	</a>
+					    </li>
+				        <li>
+				        	<a class="msbtn"><i class="fa fa-search"></i></a>
+				        </li>
+				    </ul>
+			  	</div>
+			</nav>
+
+			<div class="search-content">
+	        	<div class="input-group">
+			      <input type="text" class="form-control" placeholder="Search for...">
+			      <span class="input-group-btn">
+			        <button class="btn search-btn rsbtn" type="submit"><i class="fa fa-search"></i></button>
+			      </span>
+			    </div>
+	        </div>
+		</section>
+		<!-- End Main Navbar Section -->
+
+		<div class="back-link">
+			<ul class="breadcrumb">
+			  <li><a href="#">Home</a></li>
+			  <li><a href="#">Catalog Name</a></li>
+			  <li class="active">Product Name</li>
+			</ul>
+		</div>
+
+		<!-- Start Product Details Section -->
+		<section class="product-details">
+			<div class="section-header">
+				<h1>Full Product Name</h1>
+			</div>
+
+			<div class="customer-reviews">
+				<span>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</span>
+				<a href="#">(9 Customer reviews)</a>
+			</div>
+
+			<div class="container">
+
+				<div class="row">
+					<div class="col-lg-1 col-md-1 col-sm-2 col-xs-12">
+						<div class="product-gallery-control">
+							<div id="zoom-control">
+								<a href="#" data-image="images/pd-img-f.jpg" data-zoom-image="images/pd1-zoomlg.jpg">
+								    <img class="img-responsive" src="images/pd-img-f.jpg"/>
+								</a>
+
+								<a href="#" data-image="images/pd-img-b.jpg" data-zoom-image="images/pd2-zoomlg.jpg">
+								    <img class="img-responsive" src="images/pd-img-b.jpg"/>
+								</a>
+								
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+						<div class="zoom-photo">
+							<img class="img-responsive" id="pdd-img" src="images/pd-img-f.jpg" data-zoom-image="images/pd1-zoomlg.jpg"/>
+						</div>
+					</div>
+
+					<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+						<div class="product-description">
+							<h2>৳&nbsp;&nbsp;500.00</h2>
+							<p>১৬০ জী এস এম ১০০% কটন ফেব্রিক ।* কালার রেড ঃ ২০০ জি এস এম ৯০% কটন ১০ ল্যাক্রা।</p>
+							<p>ডিজাইন:  রিভার ইঙ্ক</p>
+							<div class="product-option">
+								
+								<div class="size">
+									<label for="">T-SHIRT SIZE</label>
+									<select class="form-control">
+									  <option>Choose an option</option>
+									  <option>S</option>
+									  <option>M</option>
+									  <option>L</option>
+									  <option>XL</option>
+									</select>
+								</div>
+								<br><br>
+								<div class="color">
+									<label for="">COLOR</label>
+									<select class="form-control">
+									  <option>Choose an option</option>
+									  <option>Red</option>
+									  <option>Black</option>
+									  <option>Green</option>
+									  <option>Gray</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="pdd-button">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+										<input class="form-control" type="number" min="0" value="1" step="1">
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+										<a class="btn btn-product" href="#">
+											Add to Cart <i class="fa fa-shopping-cart"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="share-button">
+								<a href="">
+									<i class="fa fa-share-alt"></i>&nbsp;&nbsp;&nbsp;SHARE THIS PRODUCT
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+						<div class="viewed-product">
+							<h5>RECENTLY VIEWED PRODUCT</h5>
+
+							<div class="vproduct-img">
+								<img class="img-responsive" src="images/pd-img-f.jpg" alt="">
+							</div>
+							<div class="vproduct-img">
+								<img class="img-responsive" src="images/pd-img-f.jpg" alt="">
+							</div>
+						</div>
+					</div>			
+				</div>
+			</div>
+		</section>
+		<!-- End Product List Section -->
+
+		<!-- start Product Information SEction -->
+		<section class="product-info">
+			<div class="container">
+				<div class="pill-nav">
+					<ul class="nav nav-pills">
+					  <li class="active"><a data-toggle="pill" href="#menu1">Additional information</a></li>
+					  <li><a data-toggle="pill" href="#menu2">Size Guide</a></li>
+					  <li><a data-toggle="pill" href="#menu3">Reviews(1)</a></li>
+					</ul>
+				</div>
+
+				<div class="tab-content">
+					<div id="menu1" class="tab-pane fade in active">
+						<div class="table-responsive">
+							<table class="table">
+							    <tbody>
+							      <tr>
+							        <td>T-SHIRT SIZE</td>
+							        <td>S, M, L, XL, XXL, XXXL</td>
+							      </tr>
+							      <tr>
+							        <td>COLOR</td>
+							        <td>Black, Grey Melange, Khol Black, Melon Rush, Navy Blue, Red, Snorkle Blue</td>
+							      </tr>
+							    </tbody>
+							</table>
+						</div>
+					</div>
+					<div id="menu2" class="tab-pane fade">
+					    <div class="table-responsive">
+							<table class="table">
+								<thead>
+							      <tr>
+							        <th>SIZE</th>
+							        <th>FRONT CHEST(INCH)</th>
+							        <th>HEIGHT(INCH)</th>
+							      </tr>
+							    </thead>
+							    <tbody>
+							      <tr>
+							        <td>S</td>
+							        <td>18</td>
+							        <td>25.5</td>
+							      </tr>
+							      <tr>
+							        <td>S</td>
+							        <td>18</td>
+							        <td>25.5</td>
+							      </tr>
+							      <tr>
+							        <td>S</td>
+							        <td>18</td>
+							        <td>25.5</td>
+							      </tr>
+							    </tbody>
+							</table>
+						</div>
+					</div>
+					<div id="menu3" class="tab-pane fade">
+					    <div class="media">
+						    <div class="media-left">
+						      <img src="images/man.png" class="media-object" style="width:60px">
+						    </div>
+						    <div class="media-body">
+						      <p><small><b>User name</b>-January 27,2018 </small></p>
+						      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						    </div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Product Information SEction -->
+
+		<!-- Start Related Product Section -->
+		<section class="related-product section-padding">
+			<div class="section-header">
+				<h3>Related Product</h3>
+			</div>
+
+			<div class="container">
+				<div class="owl-carousel owl-theme" id="owl-RProduct">
+
+					<div class="item">
+						<div class="product-box">
+							<div class="product-photo">
+								<a class="featured-img" href="">
+									<img class="img-responsive front-img" src="images/pd-img-f.jpg" alt="Product Image">
+									<img class="img-responsive back-img" src="images/pd-img-b.jpg" alt="Product Image">
+								</a>
+
+								<a href="#" class="sale">sale!</a>
+							</div>
+							<div class="product-name">
+								<a href="">খ্যাত/ক্ষ্যাত</a>
+							</div>
+							<div class="product-rating">
+								<span>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-o"></i>
+								</span>
+							</div>
+							<div class="product-price-option">
+								<div class="option-swicth">
+									<div class="price"><span>400.00</span></div>
+									<div class="option">
+										<a class="product-option" href="">
+											<i class="fa fa-plus"></i>&nbsp;&nbsp;select option
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="product-box">
+							<div class="product-photo">
+								<a class="featured-img" href="">
+									<img class="img-responsive front-img" src="images/pd-img-f.jpg" alt="Product Image">
+									<img class="img-responsive back-img" src="images/pd-img-b.jpg" alt="Product Image">
+								</a>
+
+								<a href="#" class="sale">sale!</a>
+							</div>
+							<div class="product-name">
+								<a href="">খ্যাত/ক্ষ্যাত</a>
+							</div>
+							<div class="product-rating">
+								<span>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-o"></i>
+								</span>
+							</div>
+							<div class="product-price-option">
+								<div class="option-swicth">
+									<div class="price"><span>400.00</span></div>
+									<div class="option">
+										<a class="product-option" href="">
+											<i class="fa fa-plus"></i>&nbsp;&nbsp;select option
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="product-box">
+							<div class="product-photo">
+								<a class="featured-img" href="">
+									<img class="img-responsive front-img" src="images/pd-img-f.jpg" alt="Product Image">
+									<img class="img-responsive back-img" src="images/pd-img-b.jpg" alt="Product Image">
+								</a>
+
+								<a href="#" class="sale">sale!</a>
+							</div>
+							<div class="product-name">
+								<a href="">খ্যাত/ক্ষ্যাত</a>
+							</div>
+							<div class="product-rating">
+								<span>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-o"></i>
+								</span>
+							</div>
+							<div class="product-price-option">
+								<div class="option-swicth">
+									<div class="price"><span>400.00</span></div>
+									<div class="option">
+										<a class="product-option" href="">
+											<i class="fa fa-plus"></i>&nbsp;&nbsp;select option
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="product-box">
+							<div class="product-photo">
+								<a class="featured-img" href="">
+									<img class="img-responsive front-img" src="images/pd-img-f.jpg" alt="Product Image">
+									<img class="img-responsive back-img" src="images/pd-img-b.jpg" alt="Product Image">
+								</a>
+
+								<a href="#" class="sale">sale!</a>
+							</div>
+							<div class="product-name">
+								<a href="">খ্যাত/ক্ষ্যাত</a>
+							</div>
+							<div class="product-rating">
+								<span>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-o"></i>
+								</span>
+							</div>
+							<div class="product-price-option">
+								<div class="option-swicth">
+									<div class="price"><span>400.00</span></div>
+									<div class="option">
+										<a class="product-option" href="">
+											<i class="fa fa-plus"></i>&nbsp;&nbsp;select option
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="product-box">
+							<div class="product-photo">
+								<a class="featured-img" href="">
+									<img class="img-responsive front-img" src="images/pd-img-f.jpg" alt="Product Image">
+									<img class="img-responsive back-img" src="images/pd-img-b.jpg" alt="Product Image">
+								</a>
+
+								<a href="#" class="sale">sale!</a>
+							</div>
+							<div class="product-name">
+								<a href="">খ্যাত/ক্ষ্যাত</a>
+							</div>
+							<div class="product-rating">
+								<span>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-o"></i>
+								</span>
+							</div>
+							<div class="product-price-option">
+								<div class="option-swicth">
+									<div class="price"><span>400.00</span></div>
+									<div class="option">
+										<a class="product-option" href="">
+											<i class="fa fa-plus"></i>&nbsp;&nbsp;select option
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="product-box">
+							<div class="product-photo">
+								<a class="featured-img" href="">
+									<img class="img-responsive front-img" src="images/pd-img-f.jpg" alt="Product Image">
+									<img class="img-responsive back-img" src="images/pd-img-b.jpg" alt="Product Image">
+								</a>
+
+								<a href="#" class="sale">sale!</a>
+							</div>
+							<div class="product-name">
+								<a href="">খ্যাত/ক্ষ্যাত</a>
+							</div>
+							<div class="product-rating">
+								<span>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-o"></i>
+								</span>
+							</div>
+							<div class="product-price-option">
+								<div class="option-swicth">
+									<div class="price"><span>400.00</span></div>
+									<div class="option">
+										<a class="product-option" href="">
+											<i class="fa fa-plus"></i>&nbsp;&nbsp;select option
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="product-box">
+							<div class="product-photo">
+								<a class="featured-img" href="">
+									<img class="img-responsive front-img" src="images/pd-img-f.jpg" alt="Product Image">
+									<img class="img-responsive back-img" src="images/pd-img-b.jpg" alt="Product Image">
+								</a>
+
+								<a href="#" class="sale">sale!</a>
+							</div>
+							<div class="product-name">
+								<a href="">খ্যাত/ক্ষ্যাত</a>
+							</div>
+							<div class="product-rating">
+								<span>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-o"></i>
+								</span>
+							</div>
+							<div class="product-price-option">
+								<div class="option-swicth">
+									<div class="price"><span>400.00</span></div>
+									<div class="option">
+										<a class="product-option" href="">
+											<i class="fa fa-plus"></i>&nbsp;&nbsp;select option
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="product-box">
+							<div class="product-photo">
+								<a class="featured-img" href="">
+									<img class="img-responsive front-img" src="images/pd-img-f.jpg" alt="Product Image">
+									<img class="img-responsive back-img" src="images/pd-img-b.jpg" alt="Product Image">
+								</a>
+
+								<a href="#" class="sale">sale!</a>
+							</div>
+							<div class="product-name">
+								<a href="">খ্যাত/ক্ষ্যাত</a>
+							</div>
+							<div class="product-rating">
+								<span>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-o"></i>
+								</span>
+							</div>
+							<div class="product-price-option">
+								<div class="option-swicth">
+									<div class="price"><span>400.00</span></div>
+									<div class="option">
+										<a class="product-option" href="">
+											<i class="fa fa-plus"></i>&nbsp;&nbsp;select option
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Related Product Section -->
+
+		<!-- Start Extra Footer Section -->
+		<section class="extra-footer section-padding">
+			<div class="section-content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<h4>TALK TO BANGLARGONJI</h4>
+							<p>Bangladesh:</p>
+							<p>- Email: talk@banglargonji.com</p>
+							<p>- Contact: (+88) 01611142529</p>
+							<h3>We support</h3>
+							<img class="img-responsive" src="images/paymentimg.png" alt="payment">
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<h4>GET CONNECTED WITH US-</h4>
+							<p>Follow us and get recent news about our new products and offers.</p>
+							<div class="social">
+								<ul>
+									<li>
+								    
+									    <a href="#" class="face"><i class="fa fa-facebook"></i></a>
+									
+									    <a href="#" class="twit"><i class="fa fa-twitter"></i></a>
+									
+									    <a href="#" class="tube"><i class="fa fa-youtube"></i></a>
+									
+									    <a href="#" class="drib"><i class="fa fa-dribbble"></i></a>
+										
+									</li>
+								</ul>
+							</div>
+							<h4>NEWSLETTER</h4>
+							<div class="newsletter">
+								<form role="form" action="#">
+			        			    <div class="input-group">
+			        			      <input type="text" class="form-control" id="nl_email" name="nl_email" placeholder="Email">
+			        			      <span class="input-group-btn">
+			        			        <button class="btn btn-news" type="button">SUBSCRIBE</button>
+			        			      </span>
+			        			    </div>
+			    			  	</form>
+							</div>
+							<p>Subscribe to our free e-newsletter, and get new tips every two weeks.</p>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<h4>বাংলার গঞ্জির কথা</h4>
+							<p>Office: 1104-A & B, Level- 11</p>
+							<h4>Multiplan Center (ECS)</h4>
+							<p>New Elephant Road, Dhaka- 1205
+							Bangladesh.</p>
+							<p>For Help Email us</p>
+							<p>Call or WhatsApp us (10AM to 7PM- Everyday)</p>
+							<h5>+8801789 88 44 88</h5>
+							Get our Office Directions on Google map
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Extra Footer Section -->
+
+		<!-- Start Footer Section -->
+		<footer>
+			<p>
+				&copy; 2018 বাংলার গঞ্জি | All Right Reserve.Design by <a href="https://www.storrea.com/">Storrea</a>
+			</p>
+		</footer>
+		<!-- End Footer Section -->
+	</div>
+
+	<div id="cart-sidenav" class="cart-sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="cart-item">
+		  	<div class="table-responsive">          
+				<table class="table table-borderless">
+				    <tbody>
+				      <tr>
+				        <td>
+				        	<a href="">
+				        		<img src="images/pd-img-f.jpg" class="img-responsive">
+				        	</a>
+				        </td>
+				        <td>
+				        	<dl>
+				        		<dt class="cart-product-name"><a href="">আবেগে চউক্ষে পানি</a></dt>
+				        		<dd>T-Shirt Size: S</dd>
+				        		<dd>Color: Black</dd>
+				        		<dd>1 x ৳ 320.00</dd>
+				        	</dl>
+				        </td>
+				        <td class="remove-icon">
+				        	<a href=""><i class="fa fa-trash"></i></a>
+				        </td>
+				      </tr>
+				    </tbody>
+				</table>
+			</div>
+		</div>
+
+		<hr class="cart-nav-hr">
+
+		<div class="cart-bill">
+			<div class="table-responsive">          
+				<table class="table table-borderless">
+				    <tbody>
+				      <tr>
+				        <td>SUBTOTAL</td>
+				        <td><h3>৳ 320.00</h3></td>
+				      </tr>
+				    </tbody>
+				</table>	
+			</div>
+
+			<div class="cart-button">
+				<a href="cart.html" class="btn btn-cart">VIEW CART <i class="fa fa-long-arrow-right"></i></a>
+				<a href="" class="btn btn-checkout">CHECKOUT <i class="fa fa-long-arrow-right"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- End Project Code  -->
+
+	<!-- Your Needed JavaScript Library Here -->
+
+	<!-- JQuery Core JS -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- Bootstrap Core JS -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- Owl Carousel Core JS -->
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<!-- Vegas Slider Core JS -->
+	<script type="text/javascript" src="js/vegas.min.js"></script>
+	<!-- ElevateZoom Core JS -->
+	<script type="text/javascript" src="js/elevateZoom.min.js"></script>
+	<!-- Developer Custom JS -->
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<!-- End of All JavaScript Library -->
+</body>
+</html>

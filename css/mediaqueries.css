@@ -1,0 +1,524 @@
+@media screen and (max-width: 1920px) {}
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 1024px) {
+
+	#top-Navbar{display: none;}
+
+	#main-navbar nav .menu-toggle-btn{
+    	display: block;
+	}
+
+	#main-navbar nav .menu-toggle-btn ul li a{
+    	font-size: 15px;
+    	font-weight: 400;
+	}
+
+	#main-navbar nav .menu-link {
+    	display: none;
+	}
+
+	#main-navbar .search-content{
+		top: 9px;
+	    right: 0;
+	    padding: 35px 29px;
+	}
+
+	.fixed-navbar{height: 90px;}
+
+	.fixed-navbar nav {
+	    height: 8px;
+	    margin: 10px 0;
+	}
+
+	.fixed-navbar .navbar-header{
+		display: none;
+	}
+
+	.fixed-navbar .menu-toggle-btn{
+		left: 10px;
+		webkit-transition: all 1s ease-in-out;
+	    -moz-transition: all 1s ease-in-out;
+	    -ms-transition: all 1s ease-in-out;
+	    -o-transition: all 1s ease-in-out;
+	    transition: all 1s ease-in-out;
+	}
+
+	.catalog .product-box .product-photo img{height: 300px;}
+
+	.catalog .product-list-control .sort-option {
+	    width: 98%;
+	    display: inline-block;
+	    text-align: right;
+	    position: absolute;
+	    top: 34%;
+	    right: 55px;
+	}
+
+	.product-description {margin-left: -25px;}
+
+	.related-product .product-box .product-photo img{height: 340px;}
+
+	.product-info .pill-nav {margin-left: 21%;}
+}
+
+@media screen and (max-width: 992px) {
+
+	#main-navbar .search-content {right: -15px;}
+
+	.product-description {margin-left: 20px;}
+
+	.zoom-photo img {height: 345px !important;}
+
+	.zoomContainer .zoomWindow {
+	    width: 250px !important;
+	    height: 345px !important;
+	}
+
+	.vproduct-img {
+	    margin-bottom: 10px;
+	    width: 33%;
+	    float: left;
+	    margin-right: 10px;
+	}
+
+	.product-info .pill-nav {margin-left: 12%;}
+
+	.catalog .product-list-control .sort-option{top: 45%;}
+}
+
+@media screen and (max-width: 768px) {
+
+	#top-Navbar{display: none;}
+
+	#main-navbar nav{margin: 5px 0;}
+
+	#main-navbar nav .menu-toggle-btn{
+    	display: block;
+	}
+
+	#main-navbar nav .menu-toggle-btn ul li a{
+    	font-size: 15px;
+    	font-weight: 400;
+	}
+
+	#main-navbar nav .menu-link {
+    	display: none;
+	}
+
+	#main-navbar .search-content{
+		top: -2px;
+    	right: -17px;
+	}
+
+	.fixed-navbar{height: 70px;}
+
+	.fixed-navbar .navbar-header{
+		display: none;
+	}
+
+	.fixed-navbar .menu-toggle-btn{
+		left: 10px;
+		webkit-transition: all 1s ease-in-out;
+	    -moz-transition: all 1s ease-in-out;
+	    -ms-transition: all 1s ease-in-out;
+	    -o-transition: all 1s ease-in-out;
+	    transition: all 1s ease-in-out;
+	}
+
+	.product-box .product-photo a img {height: 285px; }
+
+	.category-name-box-2 a img{
+		height: 250px;
+    	top: 55px;
+	}
+
+	.category-name-box-2 a span{width: 88%;}
+
+	.extra-footer .newsletter .input-group-btn{display: table;}
+
+ 	.extra-footer .social li{margin: 0;}
+
+	.extra-footer .newsletter .btn-news{
+		margin-top: 10px;
+		padding: 7px 56px;
+	}
+
+	.catalog .product-list-control .sort-option {
+	    top: 42%;
+	    right: 42px;
+	}
+
+	.catalog .product-box .product-photo img{height: 200px;}
+
+	.catalog .product-box .product-photo a:nth-child(2) {
+	    top: 0;
+	    right: 16px;
+	    width: 35px;
+	    height: 35px;
+	    line-height: 35px;
+	    font-size: 11px;
+	}
+
+	.product-description {margin-left: 20px;}
+
+	.zoom-photo img {height: 345px !important;}
+
+	.zoomContainer .zoomWindow {
+	    width: 250px !important;
+	    height: 345px !important;
+	}
+
+	.viewed-product h5{
+		margin: 15px 0;
+		text-align: center;
+	}
+
+	.viewed-product .vproduct-img {
+	    width: 25%;
+	    float: left;
+	    display: inline-block;
+	    margin-right: 10px;
+	}
+
+	.product-info .pill-nav {margin-left: 13%;}
+
+	.shopping-cart td:nth-child(6){padding: 0;}
+
+	.shopping-cart span>a{
+		display: block;
+	    margin: 10px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	#top-Navbar{display: none;}
+
+	#main-navbar nav{margin-bottom: 35px;}
+
+	#main-navbar nav .navbar-header{
+    	width: 100%;
+	    margin-left: 15%;
+	    margin-bottom: 15px;
+	}
+
+	#main-navbar nav .menu-toggle-btn{
+    	display: block;
+    	left: 15px;
+	}
+
+	#main-navbar nav .menu-toggle-btn ul li a{
+    	font-size: 15px;
+    	font-weight: 400;
+	}
+
+	#main-navbar nav .menu-link {display: none;}
+
+	.nav-icon{
+		display: inline-flex;
+		float: right;
+	}
+
+	.nav-icon .shopping-label{
+		top: 5px;
+    	left: 28px;
+	}
+
+	#main-navbar .search-content {
+	    top: 85px;
+	    right: -17px;
+	    height: 50px;
+	    padding: 8px 29px;
+	}
+
+	.fixed-navbar{height: 70px;}
+
+	.fixed-navbar .navbar-header{display: none;}
+
+	.fixed-navbar .menu-toggle-btn{
+		left: 10px;
+		webkit-transition: all 1s ease-in-out;
+	    -moz-transition: all 1s ease-in-out;
+	    -ms-transition: all 1s ease-in-out;
+	    -o-transition: all 1s ease-in-out;
+	    transition: all 1s ease-in-out;
+	}
+
+	.fixed-navbar .search-content{
+		top: 20px !important;
+    	right: -26px !important;
+	}
+
+	#vegas-slider{height: 255px;}
+
+	.category-box .col-xs-12{margin-bottom: 20px;}
+
+	.product-box .product-photo a img {height: 260px;}
+
+	.category-name-box-2 a span {width: 94%;}
+
+	.category-name-box-2 a img {
+		width: 100%;
+		top: 0;
+    	height: 370px;
+	}
+
+	.catalog .product-box .product-photo a:nth-child(2){
+		right: 65px;
+	}
+
+	.extra-footer{text-align: center;}
+
+	.extra-footer .col-xs-12 img{margin: auto;}
+
+	.extra-footer .newsletter form {
+	    width: 70%;
+	    margin: auto;
+	}
+
+	.extra-footer .newsletter .input-group-btn {
+	    display: table-cell;
+	}
+
+	.extra-footer .newsletter .btn-news {
+	    margin-top: 0;
+	    padding: 5px;
+	}
+
+	.catalog .product-list-control .sort-option {
+	    top: 47.5%;
+	    right: 25px;
+	    font-size: 13px;
+	}
+
+	.catalog .product-list-control .sort-option a span {
+	    font-size: 22px;
+	    top: -7px;
+	}
+
+	.product-gallery-control {display: none;}
+
+	.zoom-photo img {
+	    height: 400px !important;
+	    margin-left: 10%;
+	}
+
+	.zoomContainer .zoomWindow {
+	    width: 350px !important;
+	    height: 400px !important;
+	}
+
+	.product-description {
+	    margin-top: 15px;
+	    margin-left: 45px;
+	}
+
+	.product-description .share-button {
+	    margin-top: 35px;
+	    margin-bottom: 20px;
+	}
+
+	.product-info .pill-nav{margin-left: 7px;}
+
+	.product-info .pill-nav .nav-pills>li>a{
+		font-size: 17px;
+	}
+
+	.related-product .product-box .product-photo img{
+	    height: 200px;
+	}
+
+	.related-product .product-box .product-photo a:nth-child(2){
+	    right: 0;
+	    width: 35px;
+	    height: 35px;
+	    line-height: 35px;
+	    font-size: 10px;
+	}
+
+	.viewed-product{padding-left: 15px;}
+
+	.viewed-product .vproduct-img {
+	    width: 47%;
+	    margin-right: 9px;
+	}
+
+	.shopping-cart td:nth-child(6){padding: 0;}
+
+	.shopping-cart span>a{
+		display: block;
+	    margin: 10px;
+	}
+
+	.table-responsive{border: 0;}
+}
+
+@media screen and (max-width: 464px) {
+
+	#main-navbar .search-content {
+	    top: 86px;
+	    right: -26px;
+	}
+
+	.catalog .product-box .product-photo a:nth-child(2){right: 55px;}
+
+	.back-link .breadcrumb{margin-top: 60px;}
+
+	.product-info .pill-nav {margin-left: 2px;}
+
+	.related-product .product-box .product-photo img{height: 225px;}
+
+	.viewed-product .vproduct-img {margin-right: 8px;}
+
+	.shopping-cart .shopping-cart-footer .shopping-total{width:50%;}
+	
+	.shopping-cart .shopping-cart-footer .shopping-button {width: 50%;}
+	
+	.shopping-cart .shopping-cart-footer .shopping-button a:nth-child(2) {margin-top:15px;}
+}
+
+
+@media screen and (max-width: 425px) {
+
+	#main-navbar nav .navbar-header {
+	    margin-left: 10%;
+	}
+
+	.product-box .product-photo a img {height: 240px;}
+
+	#vegas-slider {height: 230px;}
+
+	.back-link .breadcrumb{margin-top: 60px;}
+
+	.catalog .product-list-control .sort-option{
+
+	    position: unset;
+	    display: block;
+	    text-align: left;
+	    margin-top: 15px;
+	}
+
+	.catalog .product-list-control .sort-option a span {
+	    font-size: 22px;
+	    top: 57.2%;
+	}
+
+	.catalog .product-list-control .sort-option .sort-dropdown-menu {
+	    top: 61.5%;
+	    left: 2%;
+	}
+
+	.zoom-photo img {margin-left: 5.5%;}
+
+	.product-description {margin-left: 20px;}
+
+	.product-info .pill-nav {margin-left: 0;}
+
+	.product-info .pill-nav .nav-pills>li>a{font-size: 15px;}
+
+	.viewed-product .vproduct-img {margin-right: 7px;}
+}
+
+
+@media screen and (max-width: 375px) {
+
+	#main-navbar nav .navbar-header {
+	    margin-left: 6%;
+	}
+
+	.catalog .section-header h1 {font-size: 40px;}
+
+	.catalog .product-list-control .sort-option a span{
+	    top: 56.2%;
+	}
+
+	.product-box .product-photo a img {height: 200px;}
+
+	.catalog .product-box .product-photo a:nth-child(2){
+	    right: 15px;
+	}
+
+	footer p>a{
+		display: block;
+	    margin-top: 10px;
+	}
+
+	.zoom-photo img{margin-left: -0.5%;}
+
+	.product-description {margin-left: 3px;}
+
+	.product-info .pill-nav {margin-left: 20px;}
+
+	.product-info .pill-nav .nav-pills>li>a{
+		font-size: 16px;
+    	display: table-caption;
+	}
+}
+
+@media screen and (max-width: 360px) {
+
+	#main-navbar nav .navbar-header {
+	    margin-left: 4%;
+	}
+
+	#vegas-slider {height: 215px;}
+
+	.related-product .product-box .product-photo img{
+	    height: 350px;
+	}
+
+	.zoom-photo img {margin-left: -10px;}
+
+	.product-info .pill-nav{margin-left: 15px;}
+
+	.product-info .pill-nav .nav-pills>li>a{
+	    font-size: 16px;
+	    display: table-caption;
+	}
+}
+
+
+@media screen and (max-width: 320px) {
+
+	#main-navbar nav .navbar-header {
+	    margin-left: -7px;
+	}
+
+	#vegas-slider {height: 200px;}
+
+	.catalog .section-header h1{font-size: 35px;}
+
+	.catalog .product-list-control .filter-option a {
+	    margin-right: 15px;
+	}
+
+	.catalog .product-list-control .sort-option a span {
+	    top: 55.2%;
+	}
+
+	.product-box .product-photo a img{height: 175px;}
+
+	.catalog .product-box .product-photo img{height: 165px;}
+
+	.btn-cart,.btn-checkout{
+	    padding: 12px 50px;
+	}
+
+	.zoom-photo img {
+		width: 280px !important;
+	    height: 340px !important;
+	    margin-left: 2%;
+	}
+
+	.zoomContainer .zoomWindow {
+	    width: 280px !important;
+	    height: 340px !important;
+	}
+
+	.product-description .pdd-button {margin-left: -30px;}
+
+	.product-info .pill-nav .nav-pills>li>a{font-size: 14px;}
+}
+

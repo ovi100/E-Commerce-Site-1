@@ -1,0 +1,1142 @@
+
+// Custom Fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+$theme-font:'Raleway', sans-serif;
+$brand-color:#4867AA;
+$gcolor:#949494;
+$ocolor:#E8620B;
+$rcolor:#A52020;
+$bcolor:#000;
+$wcolor:#fff;
+
+@mixin transition($property,$time,$effect){
+  	-webkit-transition: $property $time $effect;
+	    -moz-transition: $property $time $effect;
+	     -ms-transition: $property $time $effect;
+	      -o-transition: $property $time $effect;
+	         transition: $property $time $effect;
+}
+
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	   -moz-transform: $transforms;
+	    -ms-transform: $transforms;
+	     -o-transform: $transforms;
+            transform: $transforms;
+}
+
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+@mixin translate ($x,$y) {
+  @include transform(translate($x,$y));
+}
+
+@mixin scale ($svalue) {
+  @include transform(scale($svalue));
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+html {overflow-x: hidden;}
+
+body {
+  overflow-x: hidden;
+  font-family:$theme-font; 
+}
+
+ul li {list-style: none;}
+
+.lfloat{float:left;}
+
+.rfloat{float:right;}
+
+.dropdown:hover>.dropdown-menu{
+	display:block;
+}
+
+a:hover, a:visited, a:focus {
+	cursor: pointer;
+  	text-decoration: none;
+}
+
+.row-divider{margin-top: 25px;}
+
+.section-padding{padding: 4% 0;}
+
+.section-header{
+    padding-bottom:15px;
+	text-align: center;
+}
+
+.zoom-in:hover{
+	@include scale(1.5);
+	@include transition(all,0.5s,ease);
+}
+
+.btn-product{
+    background: transparent;
+    border: 1px solid $brand-color;
+    border-radius: 0;
+    color: $brand-color;
+    padding: 8px 25px;
+
+	&:hover{
+		background:$brand-color;
+		border: 1px solid $brand-color;
+		color: $wcolor;
+		@include transition(all,.5s,ease-in-out);
+	}
+}
+
+
+.btn-cart{
+    background: transparent;
+    border: 2px solid $wcolor;
+    border-radius: 0;
+    color: $wcolor;
+    padding: 15px 80px;
+    @include transition(all,.5s,ease-in-out);
+
+	&:hover{
+		background:$bcolor;
+		border: 1px solid $bcolor;
+		color: $wcolor;
+	}
+}
+
+.btn-checkout{
+    background: $wcolor;
+    border: 2px solid $wcolor;
+    border-radius: 0;
+    color: $bcolor;
+    padding: 15px 80px;
+    @include transition(all,.5s,ease-in-out);
+
+	&:hover{
+		background:$bcolor;
+		border: 1px solid $bcolor;
+		color: $wcolor;
+	}
+}
+
+#main-wrapper{
+	@include transition(all, .4s,ease);
+}
+
+// CSS For Top Navbar Section
+
+.top-navbar{
+
+	background-color: #3E5372;
+    color: $wcolor;
+
+    .navbar-header{
+
+    	a{
+    		color: #fff;
+    		font-size: 15px;
+    	}
+    }
+
+    .nav>li>a{
+    	color: $wcolor;
+
+    	&:focus, &:hover{
+    		background-color: transparent;
+    		color: $gcolor;
+    	}
+    }
+}
+
+
+// *******************************
+
+// CSS For Main Navbar Section
+
+.menu-sidenav {
+    background: #333333;
+    width: 0;
+    height: 100%;
+    position: fixed;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    z-index: 55;
+    @include transition(all,.4s,ease);
+
+    .closebtn {
+	    position: absolute;
+	    top: -5px;
+	    right: 20px;
+	    color: $wcolor;
+	    font-size: 36px;
+	    margin-left: 50px;
+	}
+
+    .sidenav-menu-link{
+	    padding-top: 30px;
+	    padding-left: 20px;
+	    padding-right: 20px;
+
+	    ul li{margin-bottom: 25px;}
+
+	    a{
+	    	color: $wcolor;
+	    	text-transform: uppercase;
+	    	@include transition(all,.4s,ease);
+
+	    	&:hover{color: #757575;}
+
+	    	span{
+	    		background: transparent;
+			    width: 30px;
+			    height: 30px;
+			    border: 2px solid #3e3e3e;
+			    border-radius: 50%;
+			    float: right;
+			    font-size: 10px;
+			    color: $gcolor;
+			    line-height: 27px;
+			    margin-top: -10px;
+			    text-align: center;
+	    	}
+	    }
+
+	    #second-category{margin: 25px;}
+
+	    #third-category{margin: 25px;}
+	}
+
+    hr{border-top: 1px solid #777;}
+
+    .sidenav-menu-account{
+	    padding-top: 30px;
+	    padding-left: 20px;
+	    padding-right: 20px;
+
+	    ul li{margin-bottom: 25px;}
+
+	    a{
+	    	color: $wcolor;
+	    	text-transform: uppercase;
+	    	@include transition(all,.4s,ease);
+
+	    	&:hover{color: #757575;}
+	    }
+	}
+
+	.sidenav-menu-social{
+	    padding-top: 30px;
+	    padding-left: 20px;
+	    padding-right: 20px;
+
+	    ul li{
+	    	margin-bottom: 25px;
+	    	float: left;
+    		display: inline-block;
+	    }
+
+	    a{
+	    	color: $wcolor;
+	    	font-size: 22px;
+    	    margin-right: 20px;
+	    	text-transform: uppercase;
+	    	@include transition(all,.4s,ease);
+
+	    	&:hover{color: #757575;}
+	    }
+	}
+}
+
+#main-navbar{
+    nav{
+   		height: 80px;
+    	margin: 15px 0;
+
+    	ul{margin-top: 18px;}
+
+    	ul li a{
+    		color: $bcolor;
+    		font-size: 13px;
+		    font-weight: 900;
+		    text-transform: uppercase;
+		    @include transition(all,.5s,ease);
+
+		    &:focus, &:hover{
+	    		background-color: transparent;
+	    		opacity: .5;
+	    	}
+    	}
+
+    	.menu-toggle-btn{
+    		position: absolute;
+    		right: 12%;
+    		display: none;
+    	}
+
+    	.nav-icon{
+
+    		li a{font-size: 18px;}
+
+    		.msbtn{font-size: 20px;}
+
+    		.shopping-label{
+    			width: 18px;
+			    height: 18px;
+			    background: $wcolor;
+			    border: 2px solid $bcolor;
+			    border-radius: 50%;
+			    font-size: 15px;
+			    font-weight: 400;
+    			line-height: 15px;
+			    text-align: center;
+			    position: absolute;
+			    top: 10px;
+			    left: 30px;
+    		}
+    	}
+
+    	.second-dropdown-menu {
+		    top: 20px;
+		    left: -17px;
+		    width: 230px;
+		    padding: 30px;
+		    border-radius: 0;
+		}
+
+		.third-dropdown-menu {
+		    top: -12px;
+		    left: 120px;
+		    border-radius: 0;
+		    width: 240px;
+		    padding: 20px;
+		}
+    }
+
+    .search-content{
+
+    	background: $wcolor;
+	    height: 85px;
+	    position: absolute;
+	    top: 59px;
+	    right: -29px;
+	    padding: 35px 120px;
+	    display: none;
+	    @include transition(all,1s,ease-in);
+		.search-btn {
+		    border: 0;
+		    background: transparent;
+		    box-shadow: none;
+		    font-size: 20px;
+    		margin-top: -6px;
+		}
+
+		.btn.active.focus, 
+		.btn.active:focus, 
+		.btn.focus, .btn:active.focus, 
+		.btn:active:focus, 
+		.btn:focus{
+			outline: none;
+		}
+
+		.form-control{
+			background-color: #f1f1f1;
+			border-radius: 0;
+			box-shadow: none;
+		}
+	}
+}
+
+.nav-container{
+ 	display: none;
+    @include transition(all,1s,ease);
+}
+
+
+.fixed-navbar{
+    position: fixed;
+    height: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    margin-top: -20px !important;
+    z-index: 40;
+}
+
+// *******************************
+
+// CSS For Vegas Slider Section
+
+#vegas-slider {
+	box-shadow: 0px 6px 10px $bcolor;
+	display: block;
+	width: 100%;
+	height: 570px;
+
+	.vegas-timer{
+	  top: 0;
+	  height: 4px;
+
+	  .vegas-timer-progress{background: $bcolor;}
+	}
+
+  	.previous {
+  		cursor: pointer;
+	    left: 10px;
+	    right: auto;
+	    background-image: url(../images/icon-previous.svg) !important;
+	    -webkit-transform: translateY(-50%);
+	    transform: translateY(-50%);
+	}
+
+	.next {
+		cursor: pointer;
+	    left: auto;
+	    right: 10px;
+	    background-image: url(../images/icon-next.svg) !important;
+	    -webkit-transform: translateY(-50%);
+	    transform: translateY(-50%);
+	}
+
+	.next,.previous{
+	    opacity: .8;
+	    visibility: hidden;
+	    display: block;
+	    position: absolute;
+	    width: 32px;
+	    height: 32px;
+	    margin: 0;
+	    padding: 0;
+	    background: center center no-repeat;
+	    background-size: cover;
+	    top: 50%;
+	}
+}
+
+.vegas-bottom-hr{
+    width: 88%;
+    margin: auto;
+    margin-top: -8px;
+
+    hr{border-top: 1px solid #d4d3d3;}
+}
+
+// *******************************
+
+// CSS For Category Box Section
+
+.category-name-box-1 {
+    width: 100%;
+    height: 250px;
+    background: #626262;
+    cursor: pointer;
+    line-height: 250px;
+    opacity: 0.3;
+    overflow: hidden;
+    text-align: center;
+
+    &:hover{opacity: 1;}
+
+    a>span{
+    	color: $wcolor;
+    	font-size: 26px;
+    }
+}
+
+.category-name-box-2 {
+    width: 100%;
+    height: 250px;
+    cursor: pointer;
+    line-height: 250px;
+    opacity: 1;
+    overflow: hidden;
+    text-align: center;
+
+    &:hover img{
+    	@include scale(1.3);
+		@include transition(all,2.5s,ease);
+    }
+
+    a{
+    	img{
+    		position: relative;
+    		@include translate(0,-55px);
+    	}
+
+    	span{
+	    	color: $wcolor;
+	    	font-size: 26px;
+	    	position: absolute;
+		    top: 0;
+		    left: 14px;
+		    width: 93%;
+		    background: #00000024;
+
+		    &:hover{background: rgba(0, 0, 0, 0.5);}
+	    }
+    }
+}
+
+// *******************************
+
+// CSS For New Product Section
+
+.product-box{
+    width: 100%;
+
+    .product-name{
+    	padding: 6px 0;
+
+    	a{
+    		color: $bcolor;
+    		&:hover{
+    			color: $gcolor;
+    			@include transition(all,.3s,ease-in);
+    		}
+    	}
+    }
+
+    .product-photo{
+    	a{
+    		img{height: 435px;}
+    	}
+    }
+    .product-rating{font-size: 11px;}
+
+    .product-price-option{
+    	padding: 5px 0;
+        overflow: hidden;
+		.product-option{
+			color: $bcolor;
+	    	display: block;
+	    	visibility: hidden;
+		}
+
+		.option{padding: 15px 0;}
+		
+		.option-swicth{
+			@include transition(all,.2s,ease);
+		}
+    }
+}
+
+.product-box:hover .option-swicth{
+	@include translate(0,-35px);
+	@include transition(all,.2s,ease);
+}
+
+.product-box:hover .product-option{visibility: visible;}
+
+.featured-img:hover .back-img{display: block !important;}
+
+.featured-img:hover .front-img{display: none !important;}
+
+.front-img{
+	display: block !important;
+	@include transition(all,1s,ease);
+}
+
+.back-img{display: none !important;}
+
+
+// ***************************************
+
+// CSS For Welcome Note Section
+
+.welcone-note{
+
+	.well{
+		background: #a09e9e;
+
+		span:nth-child(1){
+			color: $wcolor;
+		    font-size: 22px;
+		    vertical-align: middle;
+		}
+		span:nth-child(2){
+			color: $wcolor;
+		    font-size: 15px;
+		    margin-left: 30px;
+		}
+
+	}
+}
+
+// ***************************************
+
+//CSS For Client Section
+
+.client{
+  background: #E6E7E9;
+	
+	.item{
+	  padding: 40px;
+	  text-align: center;
+
+	  .client-info{
+		  padding-top: 25px;
+		  text-align: center;
+
+		    .client-photo{
+			  width: 100px;
+			  height: 100px;
+			  border: 2px solid #C95745;
+			  margin: 0 auto;
+			  padding: 5px;
+
+			  img{height: 86px;}
+			}
+
+			.client-name{color: $rcolor;}
+
+			.client-text{
+			  max-width: 600px;
+			  margin: 0 auto;
+			  line-height: 30px;
+			}
+		}
+	}	
+}
+
+
+//**************************************
+
+// CSS For Extra Footer Section
+
+.extra-footer{
+	background: #262626;
+	color: $gcolor;
+
+	.social{
+		margin-bottom: 15px;
+
+		li{
+			display: inline-block;
+			margin: 0 5px;
+		}
+
+		a{
+			width: 32px;
+		    height: 32px;
+		    color: $wcolor;
+		    border-radius: 50%;
+		    display: inline-block;
+		    line-height: 32px;
+		    margin: 0 10px;
+		    text-align: center;
+		    @include transition(all,.3s,ease);
+		}
+
+		a:hover{
+			@include rotate(-360);
+		}
+
+		.face{background: #3B5998;}
+		.twit{background: #4099FF;}
+		.tube{background: #CD2830;}
+		.drib{background: #E35E90;}
+	}
+
+	.newsletter{
+
+		margin-bottom: 15px;
+
+		form{width: 85%;}
+
+		.btn-news{
+			color: $brand-color;
+		    background: $wcolor;
+		    border-radius:0;
+		    font-weight: 600;
+		    padding: 5px;
+		    @include transition(all,1s,ease);
+
+		    &:hover{
+		    	color: $wcolor;
+		    	background:$brand-color;
+		    	border-left:1px solid $wcolor;
+		    }
+		}
+
+		.form-control{
+			height: 32px;
+			background: transparent;
+			color: $wcolor;
+		    background-image: none;
+		    border: 1px solid $wcolor;
+		    border-radius: 0; 
+		    box-shadow: none;
+
+		    &::placeholder{
+		    	color: $wcolor;
+		    }
+		}
+	}
+}
+
+footer{
+	background: #1b1b1b;
+	color: $wcolor;
+    padding: 25px 0;
+    text-align: center;
+
+    a{
+    	color: #6B489C;
+
+    	&:hover{color: $wcolor;}
+    }
+}
+
+/* borderless table */
+.table.table-borderless td, 
+.table.table-borderless th {
+    border: 0 !important;
+}
+
+.table.table-borderless {
+    margin-bottom: 0px;
+
+    td{
+    	color: $wcolor;
+    	img{width: 60px;}
+
+    	h3{margin-top: 0;}
+    }
+}
+
+.cart-sidenav {
+    width: 0;
+    height: 100%;
+    background: #3E5372;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index:55;
+    @include transition(all,.4s,ease);
+
+    .closebtn {
+	    position: absolute;
+	    top: -5px;
+	    right: 20px;
+	    color: $wcolor;
+	    font-size: 36px;
+	    margin-left: 50px;
+	}
+
+
+    .cart-item, .cart-bill {
+	    padding: 40px 30px;
+
+	    .cart-product-name{
+	    	a{
+	    		color: $wcolor;
+	    		font-size: 13px;
+    			margin-bottom: 5px;
+	    	}
+	    }
+
+	    .remove-icon{
+	    	a{
+	    		color: $gcolor;
+	    		font-size: 15px;
+
+	    		&:hover{color: $wcolor;}
+	    	}
+	    }
+
+	    .cart-button{
+
+	    	a{margin-top: 10px;}
+	    }
+	}
+
+	.cart-nav-hr{
+    	margin: -30px 0;
+		border-top: 2px solid #777;
+    }
+}
+
+
+// CSS For CataLog Page
+
+.back-link{
+
+	.breadcrumb{
+		background: transparent;
+		font-size: 13px;
+	    letter-spacing: 1px;
+	    text-align: center;
+
+	    a{color: $bcolor;}
+
+	    .active{text-transform: uppercase;}
+	}
+}
+
+.catalog{
+
+	.section-header{
+		h1{
+			font-size: 45px;
+    		text-transform: uppercase;
+		}
+	}
+
+	.product-list-control{
+
+		.filter-option{
+			width: 27%;
+	    	display: inline;
+
+			a{
+				color: #3e5372;
+				cursor: pointer;
+				margin-right: 20px;
+				text-transform: uppercase;
+			}
+		}
+
+		.sort-option {
+		    width: 73%;
+		    display: inline-block;
+		    text-align: right;
+
+		    a{
+		    	text-transform: uppercase;
+
+		    	span {
+				    font-size: 26px;
+				    position: absolute;
+				    top: -10px;
+				}
+		    }
+
+		    .sort-dropdown-menu {
+			    top: 20px;
+			    left: 85%;
+			    border-radius: 0;
+
+			    li>a:hover{
+			    	background-color: #5897FB;
+			    	color: $wcolor;
+			    }
+			}
+		}
+	}
+
+	.product-box{
+
+		.product-photo{
+
+			a:nth-child(1){position: relative;}
+
+			a:nth-child(2){
+				position: absolute;
+			    top: -10px;
+			    right: 20px;
+			    width: 60px;
+			    height: 60px;
+			    line-height: 60px;
+			    background: $bcolor;
+			    color: $wcolor;
+			    text-align: center;
+			    border-radius: 50%;
+			    text-transform: uppercase;
+			}
+
+			img{height: 350px;}
+		}
+	}
+}
+
+.filter-sidenav {
+    background: #262626;
+    width: 0;
+    height: 100%;
+    position: fixed;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    z-index: 55;
+    @include transition(all,.4s,ease);
+
+    .closebtn {
+	    position: absolute;
+	    top: -5px;
+	    right: 20px;
+	    color: $wcolor;
+	    font-size: 36px;
+	    margin-left: 50px;
+	}
+
+    .filter-size{
+	    padding-top: 30px;
+	    padding-left: 20px;
+	    padding-right: 20px;
+
+	    span{
+	    	color: $wcolor;
+	    	font-size: 13px;
+		    margin-bottom: 37px;
+		    text-transform: uppercase;
+	    }
+
+	    ul{margin-top: 25px;}
+
+	    ul li{
+	    	color: $wcolor;
+	    	margin-top: 20px;
+	    }
+
+	    a{
+	    	color: $wcolor;
+	    	text-transform: uppercase;
+	    	@include transition(all,.4s,ease);
+
+	    	&:hover{color: #757575;}
+	    }
+	}
+
+    hr{border-top: 2px solid #383838;}
+
+    .filter-color{
+	    padding-top: 30px;
+	    padding-left: 20px;
+	    padding-right: 20px;
+
+	    span{
+	    	color: $wcolor;
+	    	font-size: 13px;
+		    margin-bottom: 37px;
+		    text-transform: uppercase;
+	    }
+
+	    ul{margin-top: 25px;}
+
+	    ul li{
+	    	color: $wcolor;
+	    	margin-top: 20px;
+	    }
+
+	    a{
+	    	color: $wcolor;
+	    	@include transition(all,.4s,ease);
+
+	    	&:hover{color: #757575;}
+	    }
+	}
+}
+
+
+// ********************************
+
+// CSS For Product Details Page
+
+.customer-reviews{
+	margin-bottom: 45px;
+    text-align: center;
+}
+
+.zoomContainer{
+	height: 435px !important;
+
+	.zoomWindow{height: 435px !important;}
+}
+
+#zoom-control{
+
+	a{
+		img{margin-bottom: 10px;}
+	}
+}
+
+.zoom-photo{
+
+	img{
+		width: 350px !important;
+		height: 435px !important;
+	}
+}
+
+.product-description{
+	margin-left: -90px;
+    margin-top: -20px;
+
+    h2{font-size: 45px;}
+
+    .product-option{
+	    margin-top: 45px;
+
+    	label{
+    		width: 50%;
+    		display: inline;
+    		vertical-align: middle;
+    	}
+
+    	select{
+    		display: inline-block;
+		    width: 50%;
+		    float: right;
+		    background: #f3f3f3;
+		    border-radius: 0;
+		    border: 1px solid #f3f3f3;
+		    box-shadow: none;
+    	}
+    }
+
+    .pdd-button{
+    	margin-top: 50px;
+
+    	.form-control{
+    		background: transparent;
+		    border: 0;
+		    box-shadow: none;
+		    border-bottom: 2px solid #eaeaea;
+		    border-radius: 0;
+		    font-size: 25px;
+		    width: 35%;
+		    text-align: center;
+		    margin: auto;
+    	}
+    }
+
+    .share-button{
+
+    	margin-top: 50px;
+
+    	a{
+    		font-weight: bold;
+    		@include transition(all,.5s,ease);
+
+    		&:hover{color:$gcolor;}
+    	}
+    }
+}
+
+.vproduct-img{margin-bottom: 10px;}
+
+.product-info{
+
+	.pill-nav{
+
+		margin-top: 5%;
+    	margin-left: 30%;
+
+    	.nav-pills>li.active>a, 
+    	.nav-pills>li.active>a:focus, 
+    	.nav-pills>li.active>a:hover{
+    		background-color: transparent;
+    		color: $bcolor;
+		    border-bottom: 2px solid $bcolor;
+		    border-radius: 0;
+    	}
+
+    	.nav-pills>li>a {
+		    color: #a7a3a3;
+		    font-size: 22px;
+
+		    &:focus , &:hover{background-color: transparent;}
+		}
+	}
+
+	.tab-content{
+
+		margin-left: 8%;
+		margin-top: 3%;
+    	width: 80%;
+	}
+}
+
+.related-product{
+	background: #f5f5f5;
+
+	.product-box{
+
+		.product-photo{
+
+			a:nth-child(1){position: relative;}
+
+			a:nth-child(2){
+				position: absolute;
+			    top: 0;
+			    right: 20px;
+			    width: 45px;
+			    height: 45px;
+			    line-height: 45px;
+			    background: $bcolor;
+			    color: $wcolor;
+			    text-align: center;
+			    border-radius: 50%;
+			    text-transform: uppercase;
+			}
+
+			img{
+				height: 220px;
+			}
+		}
+	}
+}
+
+// ************************************
+
+// CSS For Cart Page
+
+.shopping-cart{
+
+	th,tr{text-align: center;}
+
+	td{
+		img{width: 90px;}
+	}
+
+	td:nth-child(6){padding:20px 0;}
+
+	.form-control{
+		background: transparent;
+	    border: 0;
+	    box-shadow: none;
+	    border-bottom: 2px solid #eaeaea;
+	    border-radius: 0;
+	    font-size: 20px;
+    	width: 25%;
+	    margin: auto;
+		text-align: center;
+	}
+
+	span:nth-child(1) a{
+		background: $brand-color;
+    	color: $wcolor;
+	    margin-right: 10px;
+	    padding: 7px 10px;
+	}
+
+	span:nth-child(2) a{
+		background: #fa1818;
+    	color: $wcolor;
+	    margin-right: 10px;
+	    padding: 7px 10px;
+	}
+
+	.shopping-cart-footer{
+
+		.shopping-button{float: left;}
+
+		.shopping-total{
+			width: 23%;
+    		float: right;
+		}
+	}
+}
+
+// ************************************
+
